@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Karigar AI",
+    "slug": "karigar-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F1117"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kargarai.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Allow Karigar AI to access your microphone for voice requests.",
+        "NSLocationWhenInUseUsageDescription": "Allow Karigar AI to use your location to find nearby providers.",
+        "NSCameraUsageDescription": "Allow Karigar AI to access your camera to take pictures of the problem."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0F1117"
+      },
+      "package": "com.kargarai.app",
+      "permissions": [
+        "RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION",
+        "CAMERA"
+      ]
+    },
+    "extra": {
+      "supportsRTL": true
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow Karigar AI to access your microphone."
+        }
+      ]
+    ]
+  }
+}

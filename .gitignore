@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Expo / Mobile
+karigar-mobile/.expo/
+karigar-mobile/dist/
+karigar-mobile/web-build/
+karigar-mobile/expo-env.d.ts
+karigar-mobile/*.jks
+karigar-mobile/*.p8
+karigar-mobile/*.p12
+karigar-mobile/*.key
+karigar-mobile/*.mobileprovision
+
+# Backend
+karigar-backend/__pycache__/
+karigar-backend/*.pyc
+karigar-backend/.env*
+karigar-backend/venv/
+karigar-backend/firebase-service-account.json
+karigar-backend/env/
+
+# IDEs and Editors
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Build and Temp
+dist/
+build/
+out/
+.next/
+.turbo/
+.vercel/
+.npm/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env files
+.env*
+karigar-mobile/.env*
+*-backup.txt
+
+# OS specific
+Thumbs.db
+ehthumbs.db
